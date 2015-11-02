@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- please change read, write or click operation in description with correct one. 
+Specify [unique varaible name] for read and write operation at location shown ...>@your_varible</tag> 
+For read operation this varible will be stored in run time with variable name junit:your_varible without @ symbol 
+ For write you must provide the your_variable value using dataset, var or direct within tag in the configuration -->
+<taglib name="Levi_Men" description=" Give a brief description about this page">
+
+	<Give_Me_Injector_NameTest1 description="Give a brief description about this injector what it should do">
+		<tag description="click on Men"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Nav_US!]#text::Men#href::/US/en_US/category/men/clothing#id::Levi_Men_Nav_US"></tag>
+		<tag description="read on What\'s New"   tagname="h3" havingAttribute="xpath::/HTML/BODY[1]/DIV[4]/HEADER/DIV[1]/NAV[1]/UL[1]/LI[1]/DIV[1]/DIV[1]/UL/H3[1]#text::What\'s New">@v_verify_value</tag>
+		<tag description="click on Men"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Nav_US!]#text::Men#href::/US/en_US/category/men/clothing#id::Levi_Men_Nav_US"></tag>
+		<if name="verify if popup exists" description="verify if popup exists">
+	  	<if-element description="verify if popup exists"  id="oo_no_thanks"  timeout="2000"></if-element>
+	  	  <tag description="close popup"   id="oo_no_thanks" method="click"></tag>
+	  	</if>
+		<tag description="click on New Arrivals"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Arrivals!]#text::New Arrivals#href::/US/en_US/category/men/clothing/collections/levi-collections-new-arrivals-men#id::Levi_Men_Arrivals"></tag>
+		<tag description="click on Men"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Nav_US!]#text::Men#href::/US/en_US/category/men/clothing#id::Levi_Men_Nav_US"></tag>
+		
+		<tag description="click on Levi\'s® X Pendleton®"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Pendleton!]#text::Levi\'s® X Pendleton®#href::/US/en_US/category/sports/collections/levi-collections-pendleton#id::Levi_Men_Pendleton"></tag>
+		<tag description="click on Men"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Nav_US!]#text::Men#href::/US/en_US/category/men/clothing#id::Levi_Men_Nav_US"></tag>
+		
+		<tag description="click on Shop Levi\'s® NFL Collection"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_NFL!]#text::Shop Levi\'s® NFL Collection#href::/US/en_US/category/sports/collections/levi-collections-nfl/#id::Levi_NFL"></tag>
+		<tag description="click on Men"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Nav_US!]#text::Men#href::/US/en_US/category/men/clothing#id::Levi_Men_Nav_US"></tag>
+		
+		<tag description="click on Corduroy"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Corduroy!]#text::Corduroy#href::/US/en_US/category/men/clothing/collections/levi-collections-corduroy#id::Levi_Men_Corduroy"></tag>
+		<tag description="click on Men"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Nav_US!]#text::Men#href::/US/en_US/category/men/clothing#id::Levi_Men_Nav_US"></tag>
+		
+		<tag description="click on Motion Jeans"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Motion!]#text::Motion Jeans#href::/US/en_US/category/men/clothing/collections/levi-collections-motion#id::Levi_Men_Motion"></tag>
+		<tag description="click on Men"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Nav_US!]#text::Men#href::/US/en_US/category/men/clothing#id::Levi_Men_Nav_US"></tag>
+		
+		<tag description="click on Fall Textures"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_RichTextures!]#text::Fall Textures#href::/US/en_US/category/men/clothing/collections/levi-collections-rich-textures#id::Levi_Men_RichTextures"></tag>
+		<tag description="click on Men"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_Men_Nav_US!]#text::Men#href::/US/en_US/category/men/clothing#id::Levi_Men_Nav_US"></tag>
+		
+		<tag description="click on Explore Levi\'s® NFL Collection"   tagname="a" havingAttribute="xpath:://*[@id=!Levi_ExploreNFL!]#text::Explore Levi\'s® NFL Collection#href::/US/en_US/features/nfl#id::Levi_ExploreNFL"></tag>
+	</Give_Me_Injector_NameTest1>
+	
+	
+</taglib>
